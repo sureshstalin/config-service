@@ -12,11 +12,17 @@ spring:
             password: kesavan123$$
 server:
   port: 8888
+#eureka:
+#  instance:
+#    hostname: 65.1.222.21
+#  client:
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 eureka:
   instance:
     hostname: 65.1.222.21
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #spring.cloud.config.server.git.uri=https://github.com/sureshstalin/config-files.git
 #spring.cloud.config.server.git.username=suresh_stalin
